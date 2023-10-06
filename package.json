@@ -1,0 +1,15 @@
+{
+  "name": "react-typescript",
+  "version": "1.0.0",
+  "description": "> [!NOTE]\r > Reference : Code snapshots and materials for our \"React - The Complete Guide\" course (https://acad.link/reactjs)",
+  "main": "no-typescript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.2.2"
+  }
+}
