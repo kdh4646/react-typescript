@@ -35,3 +35,7 @@ let people: {
   name: string;
   age: number;
 }[];
+
+//Type inference: occurs error if course uses number type
+let course = "React - The Complete Guide";
+//course = 1234;
