@@ -1,4 +1,5 @@
 # 💯 React + TypeScript
+
 > [!NOTE]
 > Reference : Code snapshots and materials for our "React - The Complete Guide" course (https://acad.link/reactjs)
 
@@ -7,6 +8,7 @@
 # 📖 Introduction
 
 <!--
+1. launching typescript: `npx create-react-app react-ts --template typescript`
 
 1. Handling HTTP request
 1. Implementing async/await (fetch..then()) to get response
