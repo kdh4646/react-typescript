@@ -1,9 +1,12 @@
-import { useRef } from "react";
+import { useRef, useContext } from "react";
+
+import { TodosContext } from "../store/todos-context";
 
 import classes from "./NewTodo.module.css";
 
-//how to pass the param to App          param       return type
-const NewTodo: React.FC<{ onAddTodo: (text: string) => void }> = (props) => {
+const NewTodo: React.FC = () => {
+  const todosCtx = useContext(TodosContext);
+
   const todoTextInputRef = useRef<HTMLInputElement>(null);
 
   const submitHandler = (event: React.FormEvent) => {
@@ -18,7 +21,7 @@ const NewTodo: React.FC<{ onAddTodo: (text: string) => void }> = (props) => {
     }
 
     //to App.tsx
-    props.onAddTodo(enteredText);
+    todosCtx.addTodo(enteredText);
   };
 
   return (
